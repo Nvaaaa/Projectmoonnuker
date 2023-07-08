@@ -76,8 +76,7 @@ async def nuke(ctx):
   
     for thread in threads:
         thread.start()
-
-    # Wait for all threads to finish
+        
     for thread in threads:
         thread.join()
 
