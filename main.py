@@ -80,7 +80,6 @@ async def nuke(ctx):
     for thread in threads:
         thread.join()
 
-    
     ctypes.windll.kernel32.SetConsoleTitleW("NVA has conquered all!")
     while True:
         time.sleep(1)
